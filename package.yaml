@@ -1,7 +1,7 @@
 name:                aoc2018
 version:             0.1.0.0
 github:              "mattvperry/aoc2018"
-license:             MIT
+license:             BSD3
 author:              "Matt Perry"
 maintainer:          "example@example.com"
 copyright:           "2018 Matt Perry"
