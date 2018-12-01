@@ -1,0 +1,57 @@
+name:                aoc2018
+version:             0.1.0.0
+github:              "mattvperry/aoc2018"
+license:             MIT
+author:              "Matt Perry"
+maintainer:          "example@example.com"
+copyright:           "2018 Matt Perry"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/mattvperry/aoc2018#readme>
+
+default-extensions:
+- RankNTypes
+- TypeFamilies
+- TupleSections
+- RecordWildCards
+- LambdaCase
+- FlexibleContexts
+- ConstraintKinds
+- TemplateHaskell
+- GADTs
+- KindSignatures
+- FlexibleInstances
+- MultiParamTypeClasses
+- UndecidableInstances
+dependencies:
+- base >= 4.7 && < 5
+- vector
+- mtl
+- lens
+- split
+- transformers
+- random
+
+library:
+  source-dirs: src
+
+executables:
+  aoc2018-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aoc2018
