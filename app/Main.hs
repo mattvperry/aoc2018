@@ -1,6 +1,4 @@
 module Main where
 
-import Lib
-
 main :: IO ()
-main = print . succz $ 1
+main = putStrLn "Hello World!"
