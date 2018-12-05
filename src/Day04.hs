@@ -6,8 +6,6 @@ import Data.List.Split
 import Data.Map (Map)
 import qualified Data.Map as M
 
-import Debug.Trace
-
 data Time = Time
     { month :: Int
     , day :: Int
